@@ -5,10 +5,10 @@ import cv2
 from PIL import Image, ImageTk
 import numpy as np
 
-obama_image = face_recognition.load_image_file(r"C:\Users\rater\Downloads\download.jpg")
-obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
+avneet_image = face_recognition.load_image_file("download.jpg")
+avneet_face_encoding = face_recognition.face_encodings(avneet_image)[0]
 
-known_face_encodings = [obama_face_encoding]
+known_face_encodings = [avneet_face_encoding]
 known_face_names = ["Avneet Kaur"]
 
 def add_photos():
